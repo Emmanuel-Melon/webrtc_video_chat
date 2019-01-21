@@ -1,6 +1,49 @@
+html, body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 video {
   max-width: 100%;
   width: 320px;
   border: solid 0.2em bisque;
   filter: hue-rotate(180deg) saturate(200%);
+}
+
+.wrapper {
+  background: #fff;
+  border-radius: 02.em;
+  display: flex;
+}
+
+.caller, .callee {
+  flex: 1;
+  padding: 25px;
+}
+
+.controls {
+  padding: 25px;
+  background: #eee;
+  border-radius: 0.2em;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 30%;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-weight: 700;
+  background: skyblue;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+.call-info {
+  text-align: center;
 }

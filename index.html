@@ -8,13 +8,22 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-  <h1>Video Chatting Here</h1>
-  <video id="localVideo" autoplay playsinline></video>
-  <video id="remoteVideo" autoplay playsinline></video>
-  <div>
-    <button id="startButton">Start</button>
-    <button id="callButton">Call</button>
-    <button id="hangupButton">Hang Up</button>
+  <div class="wrapper">
+    <div class="caller">
+      <video id="localVideo" autoplay playsinline></video>
+      <div class="call-info">
+        <h3>Callee's Name</h3>
+        <p>00:24:01</p>
+      </div>
+      <div class="controls">
+        <button id="startButton">Start</button>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+      </div>
+    </div>
+    <div class="callee">
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
   </div>
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="js/main.js"></script>
