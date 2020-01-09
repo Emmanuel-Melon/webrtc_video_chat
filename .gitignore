@@ -1,3 +1,5 @@
-.vscode
-sandbox
-node_modules
+.vscode/
+sandbox/
+node_modules/
+.idea/
+.DS_Store
